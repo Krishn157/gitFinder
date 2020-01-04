@@ -1,9 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import UserItem from './UserItem';
 import Spinner from '../layouts/Spinner';
-import PropTypes from 'prop-types';
+import GithubContext from '../../context/github/githubContext';
 
-const Users = ({ users, loading }) => {
+const Users = () => {
+  const githubContext = useContext(GithubContext);
+  const { loading, users } = githubContext;
   return (
     <Fragment>
       {loading ? (
@@ -17,11 +19,6 @@ const Users = ({ users, loading }) => {
       )}
     </Fragment>
   );
-};
-
-Users.propTypes = {
-  users: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired
 };
 
 const userStyle = {
