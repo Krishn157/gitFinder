@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -24,13 +24,18 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: dodgerblue;
   text-decoration: none;
 }
 
-a:hover {
-  color: #666;
+.un:hover {
+  text-decoration: underline;
+  color: #0366d6;
 }
+
+/* a:hover {
+  text-decoration: underline;
+} */
 
 ul {
   list-style: none;
@@ -129,24 +134,31 @@ img {
 .p {
   padding: 0.5rem;
 }
+
 .p-1 {
   padding: 1rem;
 }
+
 .p-2 {
   padding: 2rem;
 }
+
 .p-3 {
   padding: 3rem;
 }
+
 .py {
   padding: 0.5rem 0;
 }
+
 .py-1 {
   padding: 1rem 0;
 }
+
 .py-2 {
   padding: 2rem 0;
 }
+
 .py-3 {
   padding: 3rem 0;
 }
@@ -155,24 +167,31 @@ img {
 .m {
   margin: 0.5rem;
 }
+
 .m-1 {
   margin: 1rem;
 }
+
 .m-2 {
   margin: 2rem;
 }
+
 .m-3 {
   margin: 3rem;
 }
+
 .my {
   margin: 0.5rem 0;
 }
+
 .my-1 {
   margin: 1rem 0;
 }
+
 .my-2 {
   margin: 2rem 0;
 }
+
 .my-3 {
   margin: 3rem 0;
 }
@@ -253,6 +272,11 @@ img {
   color: #fff;
 }
 
+.btn-light:hover {
+  color: #fff;
+  background: #24292e;
+}
+
 .btn-light,
 .bg-light,
 .badge-light,
@@ -261,11 +285,21 @@ img {
   color: #333;
 }
 
-.btn-dark,
-.bg-dark,
+
 .badge-dark,
 .alert-dark {
   background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg, #34d058, #28a745 90%);
+}
+
+.bg-dark {
+  background: #24292e;
   color: #fff;
 }
 
@@ -294,8 +328,8 @@ img {
   border: #ccc solid 1px;
 }
 
-.btn:hover {
-  opacity: 0.8;
+.btn-dark:hover {
+  background: #34d058;
 }
 
 .bg-light,
@@ -354,7 +388,6 @@ table th {
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  opacity: 0.9;
   margin-bottom: 1rem;
 }
 

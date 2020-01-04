@@ -5,7 +5,12 @@ const RepoItem = ({ repo }) => {
   return (
     <div className='card'>
       <h3>
-        <a href={repo.html_url} target='_blank' rel='noopener noreferrer'>
+        <a
+          href={repo.html_url}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='un'
+        >
           {repo.name}
         </a>
       </h3>
